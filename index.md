@@ -17,7 +17,7 @@
   | [2930](https://eips.ethereum.org/all) | [Maroon Sea (v1.10.3)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22585 | 12,244,000 | None|
   | [155](https://eips.ethereum.org/all) | [Pangaea Expanse (v1.10.0)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22339#21686 | None | None|
   | [2565](https://eips.ethereum.org/all) | [Pangaea Expanse (v1.10.0)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22213 | 12,244,000 | None|
-  | [2364](https://eips.ethereum.org/all) | [Pangaea Expanse (v1.10.0)](https://github.com/ethereum/go-ethereum/releases?page=2) | #21909#22321#22357#22343#22125#22347#21940#22349#21930 | None | None|
+  | [2364](https://eips.ethereum.org/all) | [Pangaea Expanse (v1.10.0)](https://github.com/ethereum/go-ethereum/releases?page=2) | #21909#22321#22357#22343 <br> #22125#22347#21940 <br> #22349#21930 | None | None|
   | [2930](https://eips.ethereum.org/all) | [Pangaea Expanse (v1.10.0)](https://github.com/ethereum/go-ethereum/releases?page=2) | #21502#21502 | 12,244,000 | None|
   | [2718](https://eips.ethereum.org/all) | [Pangaea Expanse (v1.10.0)](https://github.com/ethereum/go-ethereum/releases?page=2) | #21502 | 12,244,000 | None|
   | [152](https://eips.ethereum.org/all) | [Tasty Tankard (v1.9.3)](https://github.com/ethereum/go-ethereum/releases?page=3) | #19972 | None | Yes|
