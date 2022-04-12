@@ -27,8 +27,8 @@
   | [1108](https://eips.ethereum.org/all) | [Blue Thessia (v1.9.2)](https://github.com/ethereum/go-ethereum/releases?page=3) | #19904 | None | Yes|
   | [1884](https://eips.ethereum.org/all) | [Blue Thessia (v1.9.2)](https://github.com/ethereum/go-ethereum/releases?page=3) | #19743 | None | Yes|
   | [1283](https://eips.ethereum.org/all) | [Can'tstantinople (v1.8.22)](https://github.com/ethereum/go-ethereum/releases?page=3) | #18486 | None | None|
-  | [627](https://eips.ethereum.org/all) | [Iceberg² (v1.8.1)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15666#15701#15802#15578#15631#16046 | None | None|
-  | [627](https://eips.ethereum.org/all) | [Iceberg¹ (v1.8.0)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15666#15701#15802#15578#15631#16046 | None | None|
+  | [627](https://eips.ethereum.org/all) | [Iceberg² (v1.8.1)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15666#15701 <br> #15802#15578#15631#16046 | None | None|
+  | [627](https://eips.ethereum.org/all) | [Iceberg¹ (v1.8.0)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15666#15701#15802 <br> #15578#15631#16046 | None | None|
   | [778](https://eips.ethereum.org/all) | [Iceberg² (v1.8.1)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15585 | None | None|
   | [778](https://eips.ethereum.org/all) | [Iceberg¹ (v1.8.0)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15585 | None | None|
   | [706](https://eips.ethereum.org/all) | [Ptolemy (v1.7.1)](https://github.com/ethereum/go-ethereum/releases?page=4) | #15106 | None | None|
