@@ -6,7 +6,7 @@
   | [1559](https://eips.ethereum.org/all) | [Vallhallan Threshold (v1.10.12)](https://github.com/ethereum/go-ethereum/releases?page=1) | #23838#23840 | 12,965,000 | None|
   | [3554](https://eips.ethereum.org/all) | [Exodus Cluster (v1.10.5)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22840#22870 | 12,965,000 | None|
   | [3554](https://eips.ethereum.org/all) | [Voyager Cluster (v1.10.4)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22840#22870 | 12,965,000 | None|
-  | [1559](https://eips.ethereum.org/all) | [Voyager Cluster (v1.10.4)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22837#22888#22970#22898#23038#23013#23039#22966#22964#23010#23028#23027#23050#22832#22842#22919#22930 | 12,965,000 | None|
+  | [1559](https://eips.ethereum.org/all) | [Voyager Cluster (v1.10.4)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22837#22888#22970#22898#23038 <br> #23013#23039#22966#22964 <br> #23010#23028#23027#23050 <br> #22832#22842#22919#22930 | 12,965,000 | None|
   | [1559](https://eips.ethereum.org/all) | [Exodus Cluster (v1.10.5)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22837#22888#22970#22898#23038 | 12,965,000 | None|
   | [3541](https://eips.ethereum.org/all) | [Exodus Cluster (v1.10.5)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22809 | 12,965,000 | None|
   | [3541](https://eips.ethereum.org/all) | [Voyager Cluster (v1.10.4)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22809 | 12,965,000 | None|
