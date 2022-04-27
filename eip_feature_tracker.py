@@ -364,16 +364,16 @@ def export_data_to_md(eipurl):
 
     dict_file = open(file_path, 'a', encoding='UTF-8')
     conn = pymysql.connect(
-        host=DB_HOST,  # 本地服务器
+        host=DB_HOST,
         user=DB_USER,
-        password=DB_PASS,  # 你的数据库密码
-        port=DB_PORT,  # 默认端口
+        password=DB_PASS,
+        port=DB_PORT,
         charset='utf8',
         db=DB_NAME)
     cursor = conn.cursor()
     sql = ''
 
-    sql = "select Number,Release_info,Commit_info,Block_number,Iotex_supported,Release_URL from eipinfos.list_eips  ORDER BY Commit_info desc;"
+    sql = "select Number,Release_info,Commit_info,Block_number,Iotex_supported,Release_URL from %s.list_eips  ORDER BY Commit_info desc;"%DB_NAME
     cursor.execute(sql)
     fields = cursor.fetchall()
     for field in fields:
