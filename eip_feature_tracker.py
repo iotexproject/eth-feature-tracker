@@ -21,22 +21,24 @@ from sqlalchemy import create_engine
 import time
 import os
 
-DB_PORT = os.environ.get('DB_PORT')
-DB_HOST = os.environ.get('DB_HOST')
-DB_USER = os.environ.get('DB_USER')
-DB_PASS = os.environ.get('DB_PASS')
-DB_NAME = os.environ.get('DB_NAME')
+DB_PORT = int(os.getenv('DB_PORT'))
+DB_HOST = os.getenv('DB_HOST')
+DB_USER = os.getenv('DB_USER')
+DB_PASS = os.getenv('DB_PASS')
+DB_NAME = os.getenv('DB_NAME')
+
+print(DB_PORT,DB_HOST,DB_USER,DB_PASS,DB_NAME)
 
 
 
 def generate_mysql():
     conn = pymysql.connect(
-        host='%s'%DB_HOST,
-        user='%s'%DB_USER,
-        password='%s'%DB_PASS,
-        port='%d'%int(DB_PORT),
+        host=DB_HOST,
+        user=DB_USER,
+        password=DB_PASS,
+        port=DB_PORT,
         charset='utf8',
-        db='%s'%DB_NAME)
+        db=DB_NAME)
     cursor = conn.cursor()
     # delete_sql = 'drop table list_eips'
     # cursor.execute(delete_sql)
@@ -57,7 +59,7 @@ def write_eip_to_db(url):
     r = requests.get(url, headers=header)
     dfs = pd.read_html(r.text)
     db = DB_NAME
-    engine = create_engine('mysql+pymysql://eip:123456@localhost:DB_PORT/{0}?charset=utf8'.format(db))
+    engine = create_engine('mysql+pymysql://{0}:{1}@{2}:{3}/{4}?charset=utf8'.format(DB_USER,DB_PASS,DB_HOST,DB_PORT,DB_NAME))
     try:
         dfs[0].to_sql('list_eips',con = engine,if_exists='append',index=False)
         dfs[1].to_sql('list_eips',con = engine,if_exists='append',index=False)
