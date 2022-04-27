@@ -31,12 +31,12 @@ DB_NAME = os.environ.get('DB_NAME')
 
 def generate_mysql():
     conn = pymysql.connect(
-        host=DB_HOST,
-        user=DB_USER,
-        password=DB_PASS,
-        port=DB_PORT,
+        host='%s'%DB_HOST,
+        user='%s'%DB_USER,
+        password='%s'%DB_PASS,
+        port='%s'%DB_PORT,
         charset='utf8',
-        db=DB_NAME)
+        db='%s'%DB_NAME)
     cursor = conn.cursor()
     # delete_sql = 'drop table list_eips'
     # cursor.execute(delete_sql)
