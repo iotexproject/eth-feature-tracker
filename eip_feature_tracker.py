@@ -34,7 +34,7 @@ def generate_mysql():
         host='%s'%DB_HOST,
         user='%s'%DB_USER,
         password='%s'%DB_PASS,
-        port='%s'%DB_PORT,
+        port='%d'%int(DB_PORT),
         charset='utf8',
         db='%s'%DB_NAME)
     cursor = conn.cursor()
