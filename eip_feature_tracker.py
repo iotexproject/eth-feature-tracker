@@ -287,8 +287,8 @@ def write_block_to_db(url):
     data = urllib2.urlopen(request).read().decode('UTF-8')
     soup = BeautifulSoup(data, 'lxml')
 
-    type_Attrs = {'class': 'SharedStyledComponents__Header3-sc-1cr9zfr-24 fWQpXW'}
-    res = soup.find_all('h3', {'class': 'SharedStyledComponents__Header3-sc-1cr9zfr-24 fWQpXW'})
+    # type_Attrs = {'class': re.compile('SharedStyledComponents__Header3-sc')}
+    res = soup.find_all('h3', {'class': re.compile('SharedStyledComponents__Header3-sc')})
 
     type_list = [item.get_text() for item in res]
     dest_str = ['London', 'Berlin']
@@ -419,8 +419,8 @@ if __name__=="__main__":
     write_resinfo_to_db(resinfos=RES_dict,urlinfos = URL_list_total)
 
     '''Crewler london's info and wirte db'''
-    london_url = 'https://ethereum.org/en/history'
-    write_block_to_db(url = london_url)
+    block_url = 'https://ethereum.org/en/history'
+    write_block_to_db(url = block_url)
 
     '''Export data to makedown'''
     export_data_to_md(eipurl=eips_url)
