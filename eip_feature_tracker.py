@@ -21,7 +21,7 @@ from sqlalchemy import create_engine
 import time
 import os
 
-DB_PORT = int(os.getenv('DB_PORT'))
+DB_PORT = int(os.os.environ.get('DB_PORT'))
 DB_HOST = os.getenv('DB_HOST')
 DB_USER = os.getenv('DB_USER')
 DB_PASS = os.getenv('DB_PASS')
