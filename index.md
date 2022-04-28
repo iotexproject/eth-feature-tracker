@@ -1,5 +1,5 @@
 ## Ethereum Feature Tracker
-| I | O | T | X | 2022-04-28 00:33:12 updated|
+| 2022-04-28 00:33:12 updated|
 
 
 | EIP Number | Release info | Commit info |  Block number | Iotex supported |
