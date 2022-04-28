@@ -21,11 +21,13 @@ from sqlalchemy import create_engine
 import time
 import os
 
-DB_PORT = os.environ.get('DB_PORT')
-DB_HOST = os.environ.get('DB_HOST')
-DB_USER = os.environ.get('DB_USER')
-DB_PASS = os.environ.get('DB_PASS')
-DB_NAME = os.environ.get('DB_NAME')
+DB_PORT = int(os.environ.get('DB_PORT'))
+DB_HOST = os.getenv('DB_HOST')
+DB_USER = os.getenv('DB_USER')
+DB_PASS = os.getenv('DB_PASS')
+DB_NAME = os.getenv('DB_NAME')
+
+print(DB_PORT,DB_HOST,DB_USER,DB_PASS,DB_NAME)
 
 
 
@@ -57,7 +59,7 @@ def write_eip_to_db(url):
     r = requests.get(url, headers=header)
     dfs = pd.read_html(r.text)
     db = DB_NAME
-    engine = create_engine('mysql+pymysql://eip:123456@localhost:DB_PORT/{0}?charset=utf8'.format(db))
+    engine = create_engine('mysql+pymysql://{0}:{1}@{2}:{3}/{4}?charset=utf8'.format(DB_USER,DB_PASS,DB_HOST,DB_PORT,DB_NAME))
     try:
         dfs[0].to_sql('list_eips',con = engine,if_exists='append',index=False)
         dfs[1].to_sql('list_eips',con = engine,if_exists='append',index=False)
@@ -285,8 +287,8 @@ def write_block_to_db(url):
     data = urllib2.urlopen(request).read().decode('UTF-8')
     soup = BeautifulSoup(data, 'lxml')
 
-    type_Attrs = {'class': 'SharedStyledComponents__Header3-sc-1cr9zfr-24 fWQpXW'}
-    res = soup.find_all('h3', {'class': 'SharedStyledComponents__Header3-sc-1cr9zfr-24 fWQpXW'})
+    # type_Attrs = {'class': re.compile('SharedStyledComponents__Header3-sc')}
+    res = soup.find_all('h3', {'class': re.compile('SharedStyledComponents__Header3-sc')})
 
     type_list = [item.get_text() for item in res]
     dest_str = ['London', 'Berlin']
@@ -362,16 +364,16 @@ def export_data_to_md(eipurl):
 
     dict_file = open(file_path, 'a', encoding='UTF-8')
     conn = pymysql.connect(
-        host=DB_HOST,  # 本地服务器
+        host=DB_HOST,
         user=DB_USER,
-        password=DB_PASS,  # 你的数据库密码
-        port=DB_PORT,  # 默认端口
+        password=DB_PASS,
+        port=DB_PORT,
         charset='utf8',
         db=DB_NAME)
     cursor = conn.cursor()
     sql = ''
 
-    sql = "select Number,Release_info,Commit_info,Block_number,Iotex_supported,Release_URL from eipinfos.list_eips  ORDER BY Commit_info desc;"
+    sql = "select Number,Release_info,Commit_info,Block_number,Iotex_supported,Release_URL from %s.list_eips  ORDER BY Commit_info desc;"%DB_NAME
     cursor.execute(sql)
     fields = cursor.fetchall()
     for field in fields:
@@ -417,8 +419,8 @@ if __name__=="__main__":
     write_resinfo_to_db(resinfos=RES_dict,urlinfos = URL_list_total)
 
     '''Crewler london's info and wirte db'''
-    london_url = 'https://ethereum.org/en/history'
-    write_block_to_db(url = london_url)
+    block_url = 'https://ethereum.org/en/history'
+    write_block_to_db(url = block_url)
 
     '''Export data to makedown'''
     export_data_to_md(eipurl=eips_url)
