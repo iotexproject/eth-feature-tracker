@@ -356,10 +356,10 @@ def export_data_to_md(eipurl):
 
     file_path = './index.md'
     dict_file = open(file_path, 'w', encoding='UTF-8')
-    dict_file.write('\n## Ethereum Feature Tracker')
-    dict_file.write('\n| I | O | T | X | %s updated|' % (gen_time))
-    dict_file.write('\n | EIP Number | Release info | Commit info |  Block number | Iotex supported |')
-    dict_file.write('\n | :--- | :--- | :--- | :--- | :--- |')
+    dict_file.write('## Ethereum Feature Tracker')
+    dict_file.write('\n %s updated \n' % (gen_time))
+    dict_file.write('\n|EIP Number | Release info | Commit info |  Block number | Iotex supported |')
+    dict_file.write('\n|:--- | :--- | :--- | :--- | :--- |')
     dict_file.close()
 
     dict_file = open(file_path, 'a', encoding='UTF-8')
