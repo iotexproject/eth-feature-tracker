@@ -1,8 +1,8 @@
 
 ## Ethereum Feature Tracker
 | I | O | T | X | 2022-04-28 00:52:42 updated|
- | EIP Number | Release info | Commit info |  Block number | Iotex supported |
- | :--- | :--- | :--- | :--- | :--- | :--- |
+| EIP Number | Release info | Commit info |  Block number | Iotex supported |
+| :--- | :--- | :--- | :--- | :--- |
   | [1559](https://eips.ethereum.org/all) | [Vallhallan Threshold (v1.10.12)](https://github.com/ethereum/go-ethereum/releases?page=1) | #23838#23840 | 12,965,000 | None|
   | [3554](https://eips.ethereum.org/all) | [Exodus Cluster (v1.10.5)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22840#22870 | 12,965,000 | None|
   | [3554](https://eips.ethereum.org/all) | [Voyager Cluster (v1.10.4)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22840#22870 | 12,965,000 | None|
