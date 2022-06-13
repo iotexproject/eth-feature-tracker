@@ -296,7 +296,8 @@ def write_block_to_db(url):
     for i in dest_str:
         pos_list.append(type_list.index(i))
 
-    res = soup.find_all('a', {'class': 'Link__ExternalLink-sc-e3riao-0 gABYms', 'rel': 'noopener noreferrer'})
+    res = soup.find_all('a', {'class': re.compile('Link__ExternalLink-sc-')})
+    # res = soup.find_all('a', {'class': 'Link__ExternalLink-sc-e3riao-0 gABYms', 'rel': 'noopener noreferrer'})
     block_tmp_list = []
     block_dict_str = ''
 
