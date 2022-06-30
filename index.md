@@ -1,8 +1,9 @@
 ## Ethereum Feature Tracker
- 2022-06-29 01:58:40 updated 
+ 2022-06-30 01:58:41 updated 
 
 |EIP Number | Release info | Commit info |  Block number | Iotex supported |
 |:--- | :--- | :--- | :--- | :--- |
+  | [695](https://eips.ethereum.org/all) | [Vectra (v1.10.20)](https://github.com/ethereum/go-ethereum/releases?page=1) | #25166#25168 | None | None|
   | [1559](https://eips.ethereum.org/all) | [Vallhallan Threshold (v1.10.12)](https://github.com/ethereum/go-ethereum/releases?page=1) | #23838#23840 | 12,965,000 | None|
   | [3554](https://eips.ethereum.org/all) | [Exodus Cluster (v1.10.5)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22840#22870 | 12,965,000 | None|
   | [3554](https://eips.ethereum.org/all) | [Voyager Cluster (v1.10.4)](https://github.com/ethereum/go-ethereum/releases?page=2) | #22840#22870 | 12,965,000 | None|
@@ -76,7 +77,6 @@
   | [649](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [658](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [681](https://eips.ethereum.org/all) | [None](None) | None | None | None|
-  | [695](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [721](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [777](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [779](https://eips.ethereum.org/all) | [None](None) | None | None | None|
