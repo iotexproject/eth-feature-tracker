@@ -1,5 +1,5 @@
 ## Ethereum Feature Tracker
- 2022-07-09 01:58:36 updated 
+ 2022-07-10 01:58:40 updated 
 
 |EIP Number | Release info | Commit info |  Block number | Iotex supported |
 |:--- | :--- | :--- | :--- | :--- |
@@ -58,6 +58,7 @@
   | [162](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [165](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [170](https://eips.ethereum.org/all) | [None](None) | None | None | None|
+  | [173](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [181](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [190](https://eips.ethereum.org/all) | [None](None) | None | None | None|
   | [191](https://eips.ethereum.org/all) | [None](None) | None | None | None|
